@@ -39,7 +39,7 @@ class HeroFrames {
       try {
         const img = new Image();
         const frameNumber = frameIndex.toString().padStart(3, '0');
-        const src = `${this.framesPath}/frame-${frameNumber}.jpg`;
+        const src = `${this.framesPath}/frame-${frameNumber}.webp`;
         
         await new Promise((resolve, reject) => {
           img.onload = resolve;
