@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+    body { margin: 0; }
+  </style>
+</head>
+<body>
+  <div id="hero-container"></div>
+  <div style="height: 100vh; background: #f0f0f0; display: flex; align-items: center; justify-content: center;">
+    <h1>Content after animation</h1>
+  </div>
+  
+  <script src="hero-frames.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    new HeroFrames(document.getElementById('hero-container'), '/path/to/frames');
+  </script>
+</body>
+</html>
